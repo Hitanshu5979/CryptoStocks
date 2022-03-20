@@ -1,0 +1,248 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_clientCryptoWallet",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_clientStockWallet",
+						"type": "address"
+					}
+				],
+				"name": "addClient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_cryLabel",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cryAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cryValue",
+						"type": "uint256"
+					}
+				],
+				"name": "addCryWallet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_stoLabel",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_stoAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_stoValue",
+						"type": "uint256"
+					}
+				],
+				"name": "addStoWallet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "clientAddr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "clientAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "clients",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "clientCryptoWallet",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "clientStockWallet",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "cryWallets",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "cryLabel",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cryAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cryValue",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "cryptoAddr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "stoWallets",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "stoLabel",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "stoAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "stoValue",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stockAddr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/client.sol": "Client"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/client.sol": {
+			"keccak256": "0xe30c1699a80250a33b679a48570d794b42e809cc0a12b955cb64243f405d6d00",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9d32f85c59750b2921aad030ef3d6de30de279ecc09bfbe9bc70fab2f2447802",
+				"dweb:/ipfs/QmYNKQKYyQvVAWVTqJtZLwBdRCo3NgfsvGzzSrJ4YTvxtS"
+			]
+		}
+	},
+	"version": 1
+}

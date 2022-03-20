@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "companyFiatWallet",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/company.sol": "Company"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/company.sol": {
+			"keccak256": "0x1daa493b9272d013fbab5b4fc0443c42fb9319b6aed188f28dad28db8f1c5c8f",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://953213ac027d2d4023d5f734e8e778472ced1c4d39eca7848acca0ac2c1a76f7",
+				"dweb:/ipfs/Qmb3ixGcn4a1kPQ8UQkSfHaSk7Yn4XR2qJtnanKsGgNVPd"
+			]
+		}
+	},
+	"version": 1
+}
