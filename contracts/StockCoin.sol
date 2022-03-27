@@ -2,13 +2,16 @@
 pragma solidity ^0.8.12;
 
 contract StockCoin {
-    // Constructor
     // Set the total number of tokens
-    // Read the total number of tokens
-
     uint256 public totalSupply;
 
-    constructor () {
-        totalSupply = 1000000;
+    mapping(address => uint256) public balanceOf;
+
+    // Constructor
+    constructor(uint256 _initialSupply) {
+        balanceOf[msg.sender] = _initialSupply;
+        totalSupply = _initialSupply;
+
+        //allocate the initial supply
     }
 }
