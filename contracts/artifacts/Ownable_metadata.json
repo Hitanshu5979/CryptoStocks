@@ -1,0 +1,119 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"OwnershipTransferred(address,address)": {
+					"notice": "Event OwnershipTransferred is used to log that a ownership change of the token has occured"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"owner()": {
+					"notice": "owner() returns the currently assigned owner of the Token "
+				},
+				"renounceOwnership()": {
+					"notice": "renounceOwnership will set the owner to zero address This will make the contract owner less, It will make ALL functions with onlyOwner no longer callable. There is no way of restoring the owner"
+				},
+				"transferOwnership(address)": {
+					"notice": "transferOwnership will assign the {newOwner} as owner"
+				}
+			},
+			"notice": "Contract is a inheritable smart contract that will add a  New modifier called onlyOwner available in the smart contract inherting it  onlyOwner makes a function only callable from the Token owner",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Ownable.sol": "Ownable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ownable.sol": {
+			"keccak256": "0xc922743c29c794f7b7fc5162aeabca8ae5ae64dbe006583ea8089542bf5fa969",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2b40d442ee9979f8fd8b498df73bb8bcf72b0a065810ab64386a3dab92d089be",
+				"dweb:/ipfs/QmUX8RbnXcKZ3y9Gw3G78m1zsPwB2vS2qZ2fCjjyBCSVRL"
+			]
+		}
+	},
+	"version": 1
+}
