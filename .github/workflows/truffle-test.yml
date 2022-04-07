@@ -37,7 +37,7 @@ jobs:
         
       # Run geth
       - name: Run geth
-        run: geth --http --http.corsdomain="https://remix.ethereum.org" --http.api web3,eth,debug,personal,net --vmdebug --datadir </home/thoubemanjaro/Desktop/Hitanshu/CryptoStocks> --dev console
+        run: geth --http --http.corsdomain="https://remix.ethereum.org" --http.api web3,eth,debug,personal,net --vmdebug --datadir <./> --dev console
 
       # Runs commands to test smart contract
       - name: Testing Smart Contracts
