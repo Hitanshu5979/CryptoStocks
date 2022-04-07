@@ -34,6 +34,10 @@ jobs:
       # Installs truffle
       - name: Install Truffle
         run: npm install -g truffle
+        
+      # Run geth
+      - name: Run geth
+        run: geth --http --http.corsdomain="https://remix.ethereum.org" --http.api web3,eth,debug,personal,net --vmdebug --datadir </home/thoubemanjaro/Desktop/Hitanshu/CryptoStocks> --dev console
 
       # Runs commands to test smart contract
       - name: Testing Smart Contracts
