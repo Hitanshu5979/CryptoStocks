@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, StockCoin ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -30,6 +30,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
         if: github.event_name == 'push'
+        
+      # Installs truffle
+      - name: Install Truffle
+        run: npm install -g truffle
 
       # Runs commands to test smart contract
       - name: Testing Smart Contracts
