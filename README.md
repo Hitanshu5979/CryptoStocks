@@ -1,5 +1,5 @@
 # CryptoStocks
-CryptoStocks is an application which will allow people to buy stocks using cryptocurrencies, essentially bridging the gap between a Stock Exchange and a Crypto Exchange, henceforth, integrating the two together
+CryptoStocks is an application which will allow people to buy stocks using cryptocurrencies, essentially bridging the gap between a Stock Exchange and a Crypto Exchanger and figuring that crypto currencies might become a more common phenomenon and people would be able to buy stocks with that.
 
 ## StockCoin
 StockCoin is the native cryptocurrency to be used on CryptoStocks app. StockCoin is an ERC-20 Token built using Solidity and it will be deployed on the Ethereum Blockchain.
